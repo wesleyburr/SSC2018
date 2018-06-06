@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychometrics of Testlets</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Psychometrics of Testlets">
+  <meta name="author" content="Wesley S. Burr$^\star$, Melissa Van Bussel$^\star$, Kara Fitze$^\star$ and Aaron D. Slepkov$^\dagger$">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Psychometrics of Testlets</h1>
+    <h2></h2>
+    <p>Wesley S. Burr$^\star$, Melissa Van Bussel$^\star$, Kara Fitze$^\star$ and Aaron D. Slepkov$^\dagger$<br/>$\star$ Dept. of Mathematics $\dagger$ Dept. of Physics &amp; Astronomy</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #FFFFFF; /* #EDE0CF; ; #CA9F9D*/
+  background-image:url("assets/img/title.png");
+}
+
+aside.gdbar img {
+  width: 200px; 
+  height: 100px; 
+  position: absolute;
+  right: 0;
+  margin: 30px 15px;
+}
+</style>
+
+<h2>Multiple Choice Tests</h2>
+
+<p>We are all (hopefully?) familiar with basic multiple choice tests. A (joking) example:</p>
+
+<p>Which of the following is the most different from the others?</p>
+
+<ul>
+<li>(A) A Ph.D. in Mathematical Biology</li>
+<li>(B) A Ph.D. in Theoretical Mathematics</li>
+<li>(C) A Ph.D. in Statistics</li>
+<li>(D) A large pepperoni pizza</li>
+</ul>
+
+<p><strong>Answer</strong>: (B), the other three can feed a family of four.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Multiple Choice (MC) Tests</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Characteristics of multiple choice tests:</p>
+
+<ul>
+<li>large number of assumed conditionally independent <strong>items</strong> (questions)</li>
+<li>performance (percentage correct) assumed to represent proficiency</li>
+<li>no scoring variance (scorer interpretation and bias)</li>
+<li>no topic effects (breadth allows for topic coverage)</li>
+</ul>
+
+<p>Highly efficient: we use these tests because of the reality of resources (or lack thereof).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How do we interpret?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Item Response Theory (IRT) is a family of models that try to describe (probabilistically) what happens when an item meets an examinee</li>
+<li>classical IRT models have conditional local independence as a primary requirement</li>
+<li>connected questions are, by construction, not independent or conditionally independent</li>
+<li>need a framework in which the fungible unit is larger than a single item, but smaller than the entire test, with the units conditionally independent</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Testlets</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Originally proposed as the required &quot;larger&quot; fungible unit.</p>
+
+<ul>
+<li>aggregation of items grouped together to act as a unit</li>
+<li>typically with a common stem (prompt, question)</li>
+<li>has a within-testlet dependence</li>
+<li>for Computer Adaptive Testing, act as atoms (non-adaptive internally)</li>
+</ul>
+
+<p>Some quite nice theory has been developed for dealing with these objects, called <em>Testlet Response Theory (TRT)</em>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Answer-Until-Correct (IF-AT)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Technological developments now allow for students to &quot;answer until correct&quot;, within frameworks such as the Immediate Feedback Assessment Technique (IF-AT).</p>
+
+<ul>
+<li>multiple choice, single correct keyed response</li>
+<li>students select option</li>
+<li>if incorrect, immediately informed of fact</li>
+<li>allowed to choose again, receiving a penalty</li>
+<li>iterate until options exhausted or correct (keyed) answer found</li>
+</ul>
+
+<p>Can be viewed as a form of collaborative testing, with the until-correct serving as passive instructor communication with examinee.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Integrated Testlets?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Integrated testlets are testlets with:</p>
+
+<ul>
+<li>interrelation of multiple choice items</li>
+<li>knowledge of one item solution is useful, or more often, necessary for the other items</li>
+<li>obviously <strong>not</strong> independent, or even conditionally independent
+
+<ul>
+<li>correlated or auto-correlated structure</li>
+</ul></li>
+<li>answer-until-correct prevents double jeopardy, and allows progression</li>
+</ul>
+
+<p>Denoted in literature as &quot;weakly&quot;, &quot;moderately&quot;, or &quot;strongly&quot; <strong>integrated</strong>, based on degree of inter-relation.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Example (Part 1 of 4)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/example.png" alt="Kinematics, Introductory Physics"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Scoring Schemes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>With answer-until-correct, there are a variety of scoring schemes available. If there is one keyed response and three distractors, some options are:</p>
+
+<ul>
+<li>(1.0, 0.5, 0.1, 0.0) (average)</li>
+<li>(1.0, 1.0, 0.5, 0.1) (very generous)</li>
+<li>(1.0, 0.3, 0.0, 0.0) (harsh?)</li>
+</ul>
+
+<p>and so on, depending on the desire for partial credit and discrimination of items.</p>
+
+<p>Empirically, several examinations of this approach have found that adding any reasonable partial credit scheme slightly boosts average scores, but does not affect discrimination.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The 2-PL Model</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The <strong>2-PL</strong> TRT model was designed for dichotomous test item data (binary):</p>
+
+<p>\[
+P_{ij}\left(y_{ij} = 1 \Big| t_{ij} \right) = \frac{\text{exp}(t_{ij})}{1 + \text{exp}(t_{ij})} = \text{logit}^{-1}(t_{ij})
+\]
+with \(t_{ij}\) the latent linear predictor of the score and \(y_{ij} \in \{ 0, 1 \}\) the response score from subject \(i\) on item \(j\).</p>
+
+<p>In the standard 2-PL IRT model, \(t_{ij} = a_j(\theta_i - b_j)\), but for the 2-PL TRT model, it is extended to 
+\[
+t_{ij} = a_j(\theta_i - b_j - \gamma_{id(j)}).
+\]
+For both of these, \(\theta_i\) is the ability for subject \(i\), \(a_j\) is the discrimination for item \(j\), and \(b_j\) is the difficulty for item \(j\). The additional term for the TRT version incorporates the dependence from two items \(j\) and \(j'\) being in the same testlet: the testlet effect when the subject is confronted with item \(j\) nested within testlet \(d(j)\).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The 3-PL Model</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are two issues with the 2-PL model:</p>
+
+<ul>
+<li>the model does not gracefully handle subject responses being guesses</li>
+<li>testlets may exhibit markedly differing amounts of testlet dependence</li>
+</ul>
+
+<p>The update which incorporates pathways for both of these issues is:
+\[
+P(y_{ij} = 1) = c_j + (1-c_j) \cdot \text{logit}^{-1}\left( a_j(\theta_i - b_j - \gamma_{id(j)})\right)
+\]
+where \(c_j\) is the &quot;guessing parameter&quot; of item \(j\).</p>
+
+<p>For example, for a four-item (one key, three distractor) item, \(c_j\) might be set to \(0.25\) (or estimated).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Estimation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Estimation of this model can be done using a MCMC framework, with priors:</p>
+
+<p>\[
+\begin{split}
+\theta_i &\sim  \mathcal{N}(0,1) \\
+\log(a_j) &\sim \mathcal{N}(\mu_a, \sigma_a^2) \\
+b_j &\sim \mathcal{N}(\mu_b, \sigma_b^2)\\
+\text{logit}(c_j) &\sim \mathcal{N}(\mu_c, \sigma_c^2)
+\end{split}
+\]
+with weakly informative conjugate hyperpriors placed on \(\mu_a\) through \(\sigma_c^2\). </p>
+
+<p>This can be done in any available environment, including a nicely hand-written Gibbs sampler (if desired ...).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Extension to Integrated Testlets</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>So there is a well established theory which seems to work reasonably well under a subset of IRT (Testlet Response Theory), with some reasonably gentle assumptions. </p>
+
+<p>The model controls for guessing, interdependence among testlet items (in a correlation sense) and has a well-understood Bayesian modeling framework which allows for estimation of posterior densities.</p>
+
+<p>What&#39;s required for integrated testlets?</p>
+
+<p><b>Explicitly model the relationship between the items of the testlet, and their inherent serial correlation (if present)</b>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Take-Aways</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Most of us who teach large intro classes use multiple choice as a convenience</li>
+<li>We mostly forget everything we were taught <b>as statisticians</b>, and just flail in the direction of the test
+
+<ul>
+<li>No verification</li>
+<li>No quantitative examination of quality</li>
+<li>No understanding of the model by which students answer our tests</li>
+<li>Limited revision and replacement of problems based on discrimination</li>
+</ul></li>
+<li>We can do better!</li>
+<li>There&#39;s a rich body of work and active development happening which is worth paying attention to </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Or we could just ...</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><center>
+<img src="./assets/img/comic.png" alt="Or we could just ...">
+</center></p>
+
+<p><center>
+Thank you for being here on Wednesday morning!
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Multiple Choice (MC) Tests'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How do we interpret?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Testlets'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Answer-Until-Correct (IF-AT)'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Integrated Testlets?'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Example (Part 1 of 4)'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Scoring Schemes'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='The 2-PL Model'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='The 3-PL Model'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Estimation'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Extension to Integrated Testlets'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Take-Aways'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Or we could just ...'>
+         14
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
